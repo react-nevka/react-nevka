@@ -1,0 +1,22 @@
+{
+  "name": "@react-nevka/eslint",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react-nevka.git",
+    "directory": "packages/nevka-eslint"
+  },
+  "homepage": "https://github.com/react-nevka/packages/nevka-eslint",
+  "keywords": ["react-nevka", "eslint"],
+  "files": [".eslintrc.js", "index.js"],
+  "description": "ESLint rules for react-nevka libraries",
+  "devDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikhail Goloto",
+  "license": "MIT"
+}
