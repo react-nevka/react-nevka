@@ -1,6 +1,6 @@
 {
   "name": "@react-nevka/eslint",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/react-nevka.git",
@@ -18,8 +18,10 @@
     "index.js"
   ],
   "description": "A shareable ESLint configuration which used in @react-nevka packages",
+  "peerDependencies": {
+    "eslint": "^8.32.0"
+  },
   "devDependencies": {
-    "eslint": "^8.32.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-optimize-regex": "^1.2.1",
@@ -28,6 +30,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-sonarjs": "^0.18.0",
     "eslint-plugin-unused-imports": "^2.0.0"
+  },
+  "eslintConfig": {
+    "extends": "."
   },
   "publishConfig": {
     "access": "public"
