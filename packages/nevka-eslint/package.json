@@ -1,22 +1,40 @@
 {
   "name": "@react-nevka/eslint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/react-nevka.git",
     "directory": "packages/nevka-eslint"
   },
   "homepage": "https://github.com/react-nevka/packages/nevka-eslint",
-  "keywords": ["react-nevka", "eslint"],
-  "files": [".eslintrc.js", "index.js"],
-  "description": "ESLint rules for react-nevka libraries",
-  "devDependencies": {},
+  "keywords": [
+    "react-nevka",
+    "eslint",
+    "eslint-config"
+  ],
+  "files": [
+    ".eslintrc.js",
+    "index.js"
+  ],
+  "description": "A shareable ESLint configuration which used in @react-nevka packages",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-optimize-regex": "^1.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sonarjs": "^0.18.0",
+    "eslint-plugin-unused-imports": "^2.0.0"
+  },
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "test": "node index.js"
   },
-  "author": "Mikhail Goloto",
+  "author": "Mikhail Goloto <mikhail@goloto.dev>",
   "license": "MIT"
 }
