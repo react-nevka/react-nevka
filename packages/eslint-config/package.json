@@ -1,6 +1,6 @@
 {
   "name": "@react-nevka/eslint-config",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/react-nevka.git",
@@ -18,8 +18,8 @@
     "index.js"
   ],
   "peerDependencies": {
-    "eslint": "^8.32.0",
-    "prettier": "^2.8.7"
+    "eslint": ">= 8",
+    "prettier": ">= 2"
   },
   "description": "A shareable ESLint configuration which used in @react-nevka packages",
   "dependencies": {
