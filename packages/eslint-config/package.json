@@ -1,12 +1,12 @@
 {
-  "name": "@react-nevka/eslint",
-  "version": "0.1.4",
+  "name": "@react-nevka/eslint-config",
+  "version": "0.2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/react-nevka.git",
-    "directory": "packages/nevka-eslint"
+    "directory": "packages/eslint-config"
   },
-  "homepage": "https://github.com/react-nevka/packages/nevka-eslint",
+  "homepage": "https://github.com/react-nevka/packages/eslint-config",
   "keywords": [
     "react-nevka",
     "eslint",
@@ -17,20 +17,22 @@
     ".eslintrc.js",
     "index.js"
   ],
+  "peerDependencies": {
+    "eslint": "^8.32.0"
+  },
   "description": "A shareable ESLint configuration which used in @react-nevka packages",
   "devDependencies": {
-    "eslint": "^8.32.0",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-optimize-regex": "^1.2.1",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-sonarjs": "^0.18.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "eslint-plugin-prettier": "^4.2.1"
+    "eslint-plugin-unused-imports": "^2.0.0"
   },
   "eslintConfig": {
     "extends": "."
@@ -43,5 +45,6 @@
     "test": "node index.js"
   },
   "author": "Mikhail Goloto <mikhail@goloto.dev>",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@3.5.0"
 }
