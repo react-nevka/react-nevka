@@ -18,10 +18,11 @@
     "index.js"
   ],
   "peerDependencies": {
-    "eslint": "^8.32.0"
+    "eslint": "^8.32.0",
+    "prettier": "^2.8.7"
   },
   "description": "A shareable ESLint configuration which used in @react-nevka packages",
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "eslint-import-resolver-alias": "^1.1.2",
@@ -32,8 +33,7 @@
     "eslint-plugin-react": "^7.32.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-sonarjs": "^0.18.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "prettier": "^2.8.7"
+    "eslint-plugin-unused-imports": "^2.0.0"
   },
   "eslintConfig": {
     "extends": "."
