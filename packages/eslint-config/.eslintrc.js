@@ -30,10 +30,8 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: true,
-    tsconfigRootDir: __dirname,
+    project: './tsconfig.json',
     ecmaVersion: 'latest',
-    lib: 'ESNext',
     sourceType: 'module',
   },
   plugins: [

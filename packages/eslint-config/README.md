@@ -8,21 +8,22 @@ Shareable ESLint configuration for ```@react-nevka``` libraries
 
 ```sh
 # with Yarn
-$ yarn add -D @react-nevka/eslint
+$ yarn add -D @react-nevka/eslint-config
 
 # with npm
-$ npm i -D @react-nevka/eslint
+$ npm i -D @react-nevka/eslint-config
 
 # with pnpm
-$ pnpm add -D @react-nevka/eslint
+$ pnpm add -D @react-nevka/eslint-config
 ```
 
-2. Use ESLint config in your project
+2. Create ESLint configuration file in your project
 
 Create a `.eslintrc.js` file in project root with the following content:
 
 ```js
 module.exports = {
-  extends: ["@react-nevka/eslint"],
+  root: true,	
+  extends: ["@react-nevka/eslint-config"],
 };
 ```
