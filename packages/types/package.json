@@ -1,0 +1,32 @@
+{
+  "name": "@react-nevka/types",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react-nevka.git",
+    "directory": "packages/types"
+  },
+  "homepage": "https://github.com/react-nevka/packages/types",
+  "keywords": [
+    "react",
+    "react-nevka",
+    "types"
+  ],
+  "files": [
+    "index.d.ts"
+  ],
+  "description": "Common types for @react-nevka packages",
+  "types": "index.d.ts",
+  "peerDependencies": {
+    "typescript": ">= 4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "tsc index.d.ts"
+  },
+  "author": "Mikhail Goloto <mikhail@goloto.dev>",
+  "license": "MIT",
+  "packageManager": "yarn@3.5.0"
+}
