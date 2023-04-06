@@ -42,13 +42,20 @@ module.exports = {
     'optimize-regex',
     'sonarjs',
     '@typescript-eslint',
-    'prettier',
     'unused-imports',
   ],
   rules: {
-    curly: 'error',
-    eqeqeq: 'warn',
+    quotes: ['warn', 'single'],
+    curly: 'warn',
+    eqeqeq: 'error',
     'no-debugger': 'warn',
+    'no-irregular-whitespace': 0,
+    'optimize-regex/optimize-regex': 'warn',
+    'promise/prefer-await-to-then': 'warn',
+    'no-new-object': 'warn',
+    'object-curly-spacing': ['warn', 'always'],
+
+    // IMPORTS
     'import/order': [
       'warn',
       {
@@ -72,29 +79,20 @@ module.exports = {
     'import/no-unresolved': 0,
     'import/namespace': 'warn',
     'import/default': 'warn',
-
-    'optimize-regex/optimize-regex': 'warn',
-    'prettier/prettier': [
-      'warn',
-      {
-        tabWidth: 2,
-        endOfLine: 'auto',
-        printWidth: 100,
-      },
-    ],
-    'promise/prefer-await-to-then': 'warn',
-    'no-new-object': 'warn',
-    '@typescript-eslint/no-unsafe-call': 'warn',
-    '@typescript-eslint/no-unsafe-member-access': 'warn',
-    '@typescript-eslint/no-unsafe-return': 'warn',
-    '@typescript-eslint/no-unused-vars': 'off',
-    'unused-imports/no-unused-imports': 'error',
+    'import/no-useless-path-segments': 'warn',
+    'unused-imports/no-unused-imports': 'warn',
     'unused-imports/no-unused-vars': [
       'warn',
       { vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_' },
     ],
+
+    // TYPESCRIPT
+    '@typescript-eslint/no-unsafe-call': 'warn',
+    '@typescript-eslint/no-unsafe-member-access': 'warn',
+    '@typescript-eslint/no-unsafe-return': 'warn',
+    '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/interface-name-prefix': 0,
-    '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+    '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
     '@typescript-eslint/naming-convention': [
       'error',
       {
@@ -188,6 +186,8 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'warn',
     '@typescript-eslint/no-misused-promises': 'warn',
     '@typescript-eslint/no-unnecessary-type-constraint': 'warn',
+
+    // REACT
     'react/no-access-state-in-setstate': 'error',
     'react/no-danger': 'error',
     'react/no-multi-comp': 'error',
@@ -206,10 +206,12 @@ module.exports = {
     'react/no-unescaped-entities': 0,
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 0,
-    'sonarjs/prefer-immediate-return': 0,
+
+    // SONAR JS
+    'sonarjs/prefer-immediate-return': 'warn',
     'sonarjs/no-duplicate-string': ['warn', 4],
     'sonarjs/no-small-switch': 0,
-    'sonarjs/cognitive-complexity': 0,
-    'no-irregular-whitespace': 0,
+    'sonarjs/cognitive-complexity': 'warn',
+    'sonarjs/no-collapsible-if': 'warn',
   },
 };
