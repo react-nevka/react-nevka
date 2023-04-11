@@ -46,6 +46,7 @@ module.exports = {
   ],
   rules: {
     'max-len': ['warn', { 'code': 100, ignoreUrls: true }],
+    complexity: ['warn', 2],
     indent: ['warn', 2],
     quotes: ['warn', 'single'],
     curly: 'warn',
@@ -190,7 +191,6 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-type-constraint': 'warn',
 
     // REACT
-    'react/no-access-state-in-setstate': 'error',
     'react/no-danger': 'error',
     'react/no-multi-comp': 'error',
     'react/no-this-in-sfc': 'error',
@@ -205,7 +205,25 @@ module.exports = {
     'react/jsx-no-useless-fragment': 'warn',
     'react/jsx-pascal-case': 'error',
     'react/prop-types': 0,
+    'react/function-component-definition': ['warn', {'namedComponents': 'arrow-function'}],
+    'react/jsx-boolean-value': ['warn', 'always'],
+    'react/jsx-closing-bracket-location': 'warn',
+    'react/jsx-curly-brace-presence': ['warn', 'never'],
     'react/no-unescaped-entities': 0,
+    'react/jsx-closing-tag-location': 'warn',
+    'react/jsx-indent': ['warn', 2],
+    'react/jsx-no-leaked-render': 'error',
+    'react/jsx-one-expression-per-line': 'warn',
+    'react/jsx-space-before-closing': 'warn',
+    'react/jsx-wrap-multilines': [
+      'warn', {
+        return: 'parens',
+        prop: 'parens-new-line',
+        logical: 'parens-new-line',
+        condition: 'parens-new-line',
+      }],
+    'react/no-array-index-key': 'error',
+    'react/no-access-state-in-setstate': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 0,
 
