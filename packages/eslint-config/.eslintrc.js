@@ -45,6 +45,7 @@ module.exports = {
     'unused-imports',
   ],
   rules: {
+    'max-len': ['warn', { 'code': 100, ignoreUrls: true }],
     indent: ['warn', 2],
     quotes: ['warn', 'single'],
     curly: 'warn',
