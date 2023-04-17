@@ -206,7 +206,7 @@ module.exports = {
     'react/jsx-pascal-case': 'error',
     'react/prop-types': 0,
     'react/function-component-definition': ['warn', {'namedComponents': 'arrow-function'}],
-    'react/jsx-boolean-value': ['warn', 'always'],
+    'react/jsx-boolean-value': ['warn', 'never'],
     'react/jsx-closing-bracket-location': 'warn',
     'react/jsx-curly-brace-presence': ['warn', 'never'],
     'react/no-unescaped-entities': 0,
