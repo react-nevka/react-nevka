@@ -43,11 +43,16 @@ module.exports = {
     'sonarjs',
     '@typescript-eslint',
     'unused-imports',
+    'prettier'
   ],
   rules: {
-    'max-len': ['warn', { 'code': 100, ignoreUrls: true }],
+    'no-whitespace-before-property': 'warn',
+    'no-multiple-empty-lines': 'warn',
+    'no-multi-spaces': 'warn',
+    'no-template-curly-in-string': 'warn',
+    'prefer-template': 'warn',
+    'max-len': ['warn', {'code': 100, ignoreUrls: true}],
     complexity: ['warn', 4],
-    indent: ['warn', 2],
     quotes: ['warn', 'single'],
     curly: 'warn',
     eqeqeq: 'error',
@@ -86,11 +91,11 @@ module.exports = {
     'unused-imports/no-unused-imports': 'warn',
     'unused-imports/no-unused-vars': [
       'warn',
-      { vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_' },
+      {vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_'},
     ],
 
     // TYPESCRIPT
-    '@typescript-eslint/explicit-function-return-type': ['warn', { "allowExpressions": true}],
+    '@typescript-eslint/explicit-function-return-type': ['warn', {'allowExpressions': true}],
     '@typescript-eslint/no-unsafe-call': 'warn',
     '@typescript-eslint/no-unsafe-member-access': 'warn',
     '@typescript-eslint/no-unsafe-return': 'warn',
@@ -191,6 +196,12 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-type-constraint': 'warn',
 
     // REACT
+    'react/jsx-sort-props': ['warn', {
+      callbacksLast: true,
+      shorthandFirst: true,
+      ignoreCase: false,
+      reservedFirst: ['key'],
+    }],
     'react/no-danger': 'error',
     'react/no-multi-comp': 'error',
     'react/no-this-in-sfc': 'error',
@@ -213,7 +224,6 @@ module.exports = {
     'react/jsx-closing-tag-location': 'warn',
     'react/jsx-indent': ['warn', 2],
     'react/jsx-no-leaked-render': 'error',
-    'react/jsx-one-expression-per-line': 'warn',
     'react/jsx-space-before-closing': 'warn',
     'react/jsx-wrap-multilines': [
       'warn', {
@@ -233,5 +243,12 @@ module.exports = {
     'sonarjs/no-small-switch': 0,
     'sonarjs/cognitive-complexity': 'warn',
     'sonarjs/no-collapsible-if': 'warn',
+
+    'prettier/prettier': ['warn',
+      {
+        'singleQuote': true,
+      }
+    ],
   },
 };
+
