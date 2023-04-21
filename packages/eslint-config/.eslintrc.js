@@ -52,7 +52,6 @@ module.exports = {
     'no-template-curly-in-string': 'warn',
     'prefer-template': 'warn',
     'max-len': ['warn', {'code': 100, ignoreUrls: true}],
-    complexity: ['warn', 4],
     quotes: ['warn', 'single'],
     curly: 'warn',
     eqeqeq: 'error',
