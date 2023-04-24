@@ -240,7 +240,7 @@ module.exports = {
     'sonarjs/prefer-immediate-return': 'warn',
     'sonarjs/no-duplicate-string': ['warn', 4],
     'sonarjs/no-small-switch': 0,
-    'sonarjs/cognitive-complexity': 'warn',
+    'sonarjs/cognitive-complexity': 0,
     'sonarjs/no-collapsible-if': 'warn',
 
     'prettier/prettier': ['warn',
